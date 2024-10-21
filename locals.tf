@@ -18,7 +18,7 @@ locals {
             description = "Example automation workspace for GitHub resources."
             execution_mode = "local"
             project_id = module.project["fem-eci-project"].id
-            vcs_repo_identifier = "${var.github_organization_name}/fem-eci-terraform-eks"
+            vcs_repo_identifier = "${var.github_organization_name}/terraform-github"
         }
     }
 
