@@ -20,6 +20,12 @@ locals {
             project_id = module.project["fem-eci-project"].id
             vcs_repo_identifier = "${var.github_organization_name}/terraform-github"
         }
+        "flutter-app-workspace" = {
+            description = "Workspace for Flutter mobile app."
+            execution_mode = "remote"
+            project_id = module.project["fem-eci-project"].id
+            vcs_repo_identifier = "${var.github_organization_name}/flutter-app"
+        }
     }
 
 
