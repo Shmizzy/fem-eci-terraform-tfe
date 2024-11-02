@@ -24,7 +24,7 @@ locals {
       description         = "Automation for AWS network resources."
       execution_mode      = "remote"
       project_id          = module.project["fem-eci-project"].id
-      vcs_repo_identifier = "${var.github_organization_name}/fem-eci-terraform-aws-network"
+      vcs_repo_identifier = "${var.github_organization_name}/tricktreat-eci-terraform-aws-network"
 
       variables = [
         {
@@ -50,7 +50,7 @@ locals {
       description         = "Automation for AWS cluster resources."
       execution_mode      = "remote"
       project_id          = module.project["fem-eci-project"].id
-      vcs_repo_identifier = "${var.github_organization_name}/fem-eci-terraform-aws-cluster"
+      vcs_repo_identifier = "${var.github_organization_name}/tricktreat-eci-terraform-aws-cluster"
 
       variables = [
         {
